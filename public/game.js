@@ -88,4 +88,4 @@ function applyMove(state, from, to) {
   return null;
 }
 
-module.exports = { newGame, legalMoves, applyMove };
+if (typeof module !== "undefined") module.exports = { newGame, legalMoves, applyMove };

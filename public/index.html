@@ -19,14 +19,18 @@
 </head>
 <body>
 <h1>Online Checkers</h1>
-<div id="lobby">
+<div id="lobby" style="display:flex;flex-direction:column;gap:8px;align-items:stretch">
+  <button id="localBtn">Pass &amp; Play (offline, 2 players on this device)</button>
+  <hr style="width:100%">
+  <input id="serverInput" placeholder="Server, e.g. 192.168.1.10:3000">
   <input id="roomInput" placeholder="Room code (blank = new)">
-  <button id="joinBtn">Join / Create</button>
+  <button id="joinBtn">Play Online: Join / Create</button>
 </div>
 <div id="info"></div>
 <div id="status"></div>
 <div id="board"></div>
 <button id="restartBtn" style="display:none;margin-top:10px">Play again</button>
+<script src="game.js"></script>
 <script src="client.js"></script>
 </body>
 </html>
